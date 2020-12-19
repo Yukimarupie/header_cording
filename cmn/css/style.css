@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+body {
+    padding: 80px;
+}
+
+.container {
+    min-width: 1200px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+
+/* ヘッダー ① */
+
+.header_01 {
+    background: #000;
+    color: #ffffff;
+}
+
+.header_01 > .container {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+

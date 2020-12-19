@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+body {
+    padding: 80px;
+}
+
+.container {
+    min-width: 1200px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+header + header {
+    margin-top: 100px;
+}
+
+/* ヘッダー01 */
+
+.header_01 {
+    background: pink;
+    color: #000000;
+}
+
+.header_01 > .container {
+    height: 60px; /* ヘッダーの高さ指定 */
+    display: flex; 
+    align-items: center;
+    /* min-width: none; */
+    /* justify-content: space-between; */
+}
+
+.header_area_logo .logo {
+    display: block;
+}
+
+.header_area_logo .logo img {
+    height: 25px; /* ロゴの高さ指定 widthで指定すると変な感じで改行が入ったりするからheight */
+    vertical-align: bottom;
+}
+
+/* ヘッダー01 ナビゲーション */
+.header_area_nav {
+    margin-left: auto;
+}
+
+/* ヘッダー 01 ナビゲーションリスト */
+.header_list_nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+/* ヘッダー 01 ナビゲーションリスト同士の間を開ける */
+.header_list_nav > li + li {
+    margin-left: 40px;
+}
+
+/* ヘッダー 01 ナビゲーションリストの文字 */
+.header_list_nav a {
+    color: #000000;
+    font: 500 15px/1em;
+}
+
+/* ヘッダー 01 お問い合わせボタン */
+.header_list_nav .header_btn_contact {
+    font-size: 0.7em; /* お問い合わせの文字だけ小さく */
+    display: flex; /* 中央揃えが楽なので、blockでなく。 */
+    align-items: center;
+    height: 36px;
+    padding: 20px 20px 0 20px; /* トップにアイコン用の隙間 */
+    background: #E19523;
+    border-radius: 5px;  /* オレンジの角丸 */
+} 
+
+/* ヘッダー 01 お問い合わせアイコンの位置設定 */
+.header_list_nav .header_btn_contact:before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(cmn/img/icon/mail.png) no-repeat center center;
+    background-size: contain; /* 縦横比保持で、背景領域に収まる最大サイズになるよう拡大縮小 */
+    position: absolute;　/* 浮かせる */
+    top: 50%;
+    left: 15px;
+    transform: translate(0, -50%);　/* 中央揃えに */
+}
+
+
+
+
+/* ヘッダー 02 */
+.header_02 {
+    background: orange;
+}
+
+.header_02 > .container {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    min-width: none;
+}
+
+.header_area_nav_02 {
+    margin-left: auto;
+}
